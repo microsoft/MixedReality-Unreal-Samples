@@ -2,6 +2,7 @@
 
 This repository hosts sample applications for mixed reality projects on Unreal Engine 4. (https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-development-overview)
 * The HoloLens2Example project is a simple app that allows you to spawn Paragon minions on the surface of your world and store their locations with persistent anchors
+* The Chess App is the final result of the Unreal + UX Tools [tutorial](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-uxt-ch1) located on the Microsoft Mixed Reality docs
 
 ## HoloLens 2 Example App
 
