@@ -26,6 +26,16 @@
 				"Win64",
 				"HoloLens"
 			]
+		},
+		{
+			"Name": "UXTools",
+			"Enabled": true,
+			"SupportedTargetPlatforms": [
+				"Win64",
+				"HoloLens",
+				"Android",
+				"IOS"
+			]
 		}
 	]
 }
