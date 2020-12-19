@@ -10,10 +10,9 @@
 	"DocsURL": "https://microsoft.github.io/MixedReality-UXTools-Unreal/",
 	"MarketplaceURL": "",
 	"SupportURL": "https://github.com/microsoft/MixedReality-UXTools-Unreal",
-	"EngineVersion": "4.25.0",
 	"CanContainContent": true,
 	"IsBetaVersion": true,
-	"Installed": true,
+	"Installed": false,
 	"SupportedTargetPlatforms": [
 		"Win64",
 		"HoloLens",
