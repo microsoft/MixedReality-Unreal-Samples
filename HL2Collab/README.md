@@ -22,22 +22,22 @@ There are two Maps: *MainMenuMap* and *MainMap*
 
     There are two important functions that the *MainMenuMap* performs:
     - **Host:** The Host creates a session, and then immediately opens the map/level that it wants all clients to connect to. Since the host is also a player (rather than a dedicated server), we set it to be a *listen* server under the "Open Level" options. Note that the LevelName is passed as a variable string defined in the Level Blueprint . 
-![Hosting](images/BP_Host.png) 
+![Hosting](images/BP_Host.PNG) 
     - **Join:** Joining is very similar to hosting. The primary difference is that once a session is created, instead of opening a Map/Level by name, we pass the "Open" command an IP address. We used a simple "Execute Console Command" node to do this.
-![Joining](images/BP_Join.png) 
+![Joining](images/BP_Join.PNG) 
 
 - **MainMap:** This is the Map that clients will connect to. Its main function (other than dsiplaying the level geometry) is to spawn the XRGameMode. This map will make use of the important Blueprint Assets in the Blueprints folder: 
-![Blueprint Assets](images/BlueprintAssets.png)
+![Blueprint Assets](images/BlueprintAssets.PNG)
     - **XRGameMode:** Spawns a XRPlayerController and a HUD.Note that it does *not* spawn a Pawn. This is because there will be multiple pawns, one for each client, and we want to ensure that there is logic so that each controller is able to control only its own Pawn. 
-![Game Mode](images/XRGameMode.png)
+![Game Mode](images/XRGameMode.PNG)
     - **XRPlayerController:** Every player will have a single player controller. The XRPlayerController takes care of spawning the avatar for its own client. Since multiple controllers may be replicated to a machine from the server, we need to make sure we are using the "local" player controller, i.e, the one that owns this client. 
-![Spawn Player Avatar](images/SpawnPlayerAvatar1.png)
+![Spawn Player Avatar](images/SpawnPlayerAvatar1.PNG)
     Once we have the correct controller, we can proceed to call the spawning code on the server. The server then replicates this to every client. 
-![Spawn Player Avatar Continued](images/SpawnPlayerAvatar2.png)
+![Spawn Player Avatar Continued](images/SpawnPlayerAvatar2.PNG)
     Note that SpawnAvatar is a custom event, and it is set to "RunOnServer".
-![Custom Event Spawn Avatar](images/CustomeEventSpawnAvatar.png)
+![Custom Event Spawn Avatar](images/CustomeEventSpawnAvatar.PNG)
     - **XRPawn:** The Pawn/Avatar updates and stores its position and rotation in HeadPos and HeadRot variables every tick.
-![Pawn Variables](images/XRPawnVariables.png)
+![Pawn Variables](images/XRPawnVariables.PNG)
         They are set to "replicate" so that when XRPawn sends this data to the server (again, via a custom event), the server replicates it to all the clients.
-![Spawn Player Tick](images/XRPawnTick.png)
-![Spawn Player Tick Continued](images/XRPawnTick2.png)
+![Spawn Player Tick](images/XRPawnTick.PNG)
+![Spawn Player Tick Continued](images/XRPawnTick2.PNG)
