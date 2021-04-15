@@ -1,7 +1,41 @@
-# HL2Collab
-## _Multiplayer Networking on the HoloLens_
 ---
-# Instructions
+page_type: sample
+languages:
+- cpp
+products:
+- windows
+- mixed-reality
+- hololens
+---
+
+# HL2Collab - Multiplayer Networking on the HoloLens
+
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+
+<!-- Need intro -->
+
+Supported Unreal versions | Supported device | Built with UXT version
+:-----------------: | :----------------: | :----------------------:
+Unreal Engine 4.25+ | HoloLens 2 | 0.9
+
+## Contents
+
+| File/folder | Description |
+|-------------|-------------|
+| `Config` | HoloLens and default configuration files. |
+| `Content` | Project files and assets. |
+| `Source` | Mixed Reality Toolkit for Unreal UX Tools plugin components. |
+| `images` | Image assets for the README. |
+| `.gitignore` | Define what to ignore at commit time. |
+| `HL2Collab.sln` | Project solution file. |
+| `HL2Collab.uproject` | Unreal Engine project file. |
+| `README.md` | This README file. |
+
+## Prerequisites
+
+<!-- Need these -->
+
+# Setup
 
 - Open the *Level* blueprint in MainMenuMap. This contains instructions as well.
 - Set the **IP_TextField** variable to your computer's IP Adress
@@ -11,7 +45,13 @@
 - Run the HL2 clients, and "right pinch" to join the session to the host on the IP Address provided earlier
 - (Optional) Run any other Desktop executables, and press "J" to join
 
-## Explanation of Code
+## Running the sample 
+
+<!-- Need this -->
+
+1. 
+
+## Key concepts
 
 There are two Maps: *MainMenuMap* and *MainMap*
 
@@ -41,3 +81,7 @@ There are two Maps: *MainMenuMap* and *MainMap*
         They are set to "replicate" so that when XRPawn sends this data to the server (again, via a custom event), the server replicates it to all the clients.
 ![Spawn Player Tick](images/XRPawnTick.PNG)
 ![Spawn Player Tick Continued](images/XRPawnTick2.PNG)
+
+## Next steps
+
+<!-- Need links -->
