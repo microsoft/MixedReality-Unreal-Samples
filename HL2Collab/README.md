@@ -1,6 +1,6 @@
 ---
 page_type: sample
-name: HoloLens Multiplayer Networking in Unity
+name: HoloLens Multiplayer Networking in Unreal
 description: This sample shows how to network multiple HoloLens 2 devices using the built-in Unreal Engine networking system.
 languages:
 - cpp
@@ -9,7 +9,7 @@ products:
 - hololens
 ---
 
-# HL2Collab - HoloLens Multiplayer Networking in Unity
+# HL2Collab - HoloLens Multiplayer Networking in Unreal
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
@@ -34,14 +34,16 @@ This sample shows how to network multiple HoloLens 2 devices together using Unre
 
 ## Prerequisites
 
-<!-- Need these -->
-Needs OpenXR - need input from Sajid, Jackson, Summer
+* Download Unreal Engine 4.25 or later
+* Install the [Microsoft OpenXR plugin](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239) from the Unreal Engine Marketplace
 
 # Setup
 
 1. Clone or download this sample repository
-2. Open the **Level** blueprint in **MainMenuMap** and review the instructions
-3. Set the **IP_TextField** variable to your computer's IP Address
+2. Open Unreal Engine, go to **Project Settings > Plugins**, search for "Microsoft OpenXR", and enable the plugin. 
+    * Note that the "Microsoft Windows Mixed Reality" plugin must be disabled for OpenXR to work. You may need to restart the engine for changes to take effect.
+3. Open the **Level** blueprint in **MainMenuMap** and review the instructions
+4. Set the **IP_TextField** variable to your computer's IP Address
 
 ## Running the sample 
 
