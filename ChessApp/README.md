@@ -12,7 +12,7 @@ products:
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
- The final result of the Unreal + UX Tools [tutorial](https://docs.microsoft.com/en-us/windows/mixed-reality/unreal-uxt-ch1) located on the Microsoft Mixed Reality docs. Use what you've learned to add the rest of the pieces to the board! 
+ The final result of the Unreal + UX Tools [tutorial](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1) located on the Microsoft Mixed Reality docs. Use what you've learned to add the rest of the pieces to the board! 
 
 Supported Unreal versions | Supported device | Built with UXT version
 :-----------------: | :----------------: | :----------------------:
@@ -37,16 +37,19 @@ You can find the samples most up-to-date prerequisites and installation instruct
 ## Setup
 
 1. Clone or download this sample repository
-2. Launch Unreal and open the **ChessApp** folder
+2. Open the ChessApp.uproject in Unreal Engine
 
 ## Running the sample
 
-1. 
+* To run the experience in-editor, select "Selected Viewport" as the Active Play Mode and press play. Two blue hands will come up that allow you to simulate hand input in the editor. Learn more about the input simulation controls provided by the UX Tools plugin [here](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/InputSimulation.html). 
+
+* To stream the experience from a PC to a HoloLens 2 headset, follow the instructions for [streaming in Unreal](https://docs.microsoft.com/windows/mixed-reality/unreal-streaming).
+
+* To package and deploy the app to a HoloLens 2 headset, follow the instructions for [deploying to device in Unreal](https://docs.microsoft.com/windows/mixed-reality/unreal-deploying).
 
 ## Key concepts
 
 This sample is fully documented in our [Unreal tutorial series](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch1), which covers the following key concepts:
-
 * Starting a new project
 * Setting up for mixed reality
 * Working with user input

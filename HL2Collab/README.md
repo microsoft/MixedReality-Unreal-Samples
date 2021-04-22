@@ -15,7 +15,7 @@ products:
 
 Supported Unreal versions | Supported device | XR configuration
 :-----------------: | :----------------: | :----------------------:
-Unreal Engine 4.25+ | HoloLens 2 | OpenXR
+Unreal Engine 4.26+ | HoloLens 2 | OpenXR
 
 This sample shows how to network multiple HoloLens 2 devices together using Unreal Engine's built-in networking system. When using the sample, you'll need one instance of the application running as a Listen server. The Listen server is generally run on a desktop. Your client instances of the application can be other HoloLens 2 devices or another desktop.
 
@@ -25,7 +25,7 @@ This sample shows how to network multiple HoloLens 2 devices together using Unre
 |-------------|-------------|
 | `Config` | HoloLens and default configuration files. |
 | `Content` | Project files and assets. |
-| `Source` | Mixed Reality Toolkit for Unreal UX Tools plugin components. |
+| `Source` | Source and build files. |
 | `images` | Image assets for the README. |
 | `.gitignore` | Define what to ignore at commit time. |
 | `HL2Collab.sln` | Project solution file. |
@@ -34,7 +34,7 @@ This sample shows how to network multiple HoloLens 2 devices together using Unre
 
 ## Prerequisites
 
-* Download Unreal Engine 4.25 or later
+* Download Unreal Engine 4.26 or later
 * Install the [Microsoft OpenXR plugin](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239) from the Unreal Engine Marketplace
 
 # Setup
@@ -84,7 +84,3 @@ They are set to "replicate" so that when XRPawn sends this data to the server (a
 
 ![Spawn Player Tick](images/XRPawnTick.PNG)
 ![Spawn Player Tick Continued](images/XRPawnTick2.PNG)
-
-## Next steps
-
-<!-- Need links -->
