@@ -12,14 +12,14 @@ products:
 
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 
+Supported Unreal versions | Supported device
+:-----------------: | :----------------:
+Unreal Engine 4.26+ | HoloLens 2
+
 Spawn Paragon minions on the surface of your world and store their locations with persistent anchors. This is a simple HoloLens 2 app built with Unreal Engine 4.26 that demonstrates:
 * Basic articulated hand tracking-based interactions in the form of fingertip cursor and pushable buttons
 * Spatial mapping and collision understanding
 * Launching, saving and loading persistent anchors in the world
-
-Supported Unreal versions | Supported device
-:-----------------: | :----------------:
-Unreal Engine 4.26+ | HoloLens 2
 
 ## Contents
 
