@@ -30,7 +30,7 @@ Spawn Paragon minions on the surface of your world and store their locations wit
 | `Source` | Source and build files. |
 | `.gitignore` | Define what to ignore at commit time. |
 | `HoloLens2Example.uproject` | Unreal Engine project file. |
-| `README.md` | This README file. |s
+| `README.md` | This README file. |
 
 ## Prerequisites
 s
